@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](_media/icon.svg)
+<img src="_media/icon.svg" alt="logo" width="200"/>
 
 # Поговорим о Typescript
 ## Serabass
