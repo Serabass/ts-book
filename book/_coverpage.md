@@ -3,6 +3,7 @@
 ![logo](_media/icon.svg)
 
 # Поговорим о Typescript
+## Serabass
 
 > Книга о Typescript и не только.
 
