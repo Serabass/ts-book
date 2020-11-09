@@ -17,4 +17,5 @@ http://localhost:3000/
 * VST
 * Unit Testing
 * Angular
-* 
+* Laravel
+* Node.js

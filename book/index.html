@@ -15,12 +15,22 @@
     />
   </head>
   <body>
-    <div id="app"></div>
+    <nav>
+      <a href="#">Русский</a>
+      <a href="#/en-us/">English</a>
+    </nav>
+    <div id="app">Please wait...</div>
     <script>
       window.$docsify = {
+        alias: {
+          "/ru-ru/(.*)": "/ru-ru/$1",
+          "/en-us/(.*)": "/en-us/$1",
+        },
         auto2top: true,
         name: "ts-book",
-        coverpage: true,
+        coverpage: false,
+        maxLevel: 2,
+        subMaxLevel: 2,
         name: "Serabass",
         repo: "Serabass/ts-book",
 
