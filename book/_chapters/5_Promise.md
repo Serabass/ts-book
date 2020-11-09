@@ -4,7 +4,20 @@
 
 ---
 
-[](_includes/5/callbackhell-example.ts ':include :type=code')
+```typescript
+
+function callbackHellExample(cb: Function) {
+  fs.readFile('file.txt', function (err, data) {
+      if (err) throw err;
+      fs.writeFile('file.txt', '', function (err) {
+          if (err) throw err;
+          
+          cb();
+      });
+  });
+}
+
+```
 
 ---
 
@@ -18,13 +31,26 @@
 
 Теперь вышепредставленный код мы можем описать таким образом (вообразим, что наша библиотека `fs` умеет работать с Промисами):
 
-[](_media/5/callbackhell-promised.ts ':include :type=code js')
+```typescript
+function callbackHellExample(cb: Function) {
+  fs.readFile('file.txt').then(function (data) {
+      fs.writeFile('file.txt', '').then(function () {
+
+      });
+  });
+}
+```
 
 Не сильно помогло, да? Согласен. Однако здесь стоит отметить, что теперь мы имеем дело с объектом, которым намного удобнее манипулировать. Ну и наряду с появлением Промисов был введён стандарт `async`/`await` (который также перекочевал в JS из Ruby и C#).
 
 Поэтому теперь мы можем делать вот так:
 
-[](_media/5/async-await.ts ':include :type=code js')
+```typescript
+async function myAsyncAwaitFunction(): Promise<void> {
+  let data = await fs.readFile('file.txt');
+  await fs.writeFile('file.txt', '');
+}
+```
 
 Объект Promise по умолчанию содержит всего два метода: `.then()` и `.catch()`.
 
@@ -35,13 +61,29 @@
 
 Небольшая вкусняшка: когда мы используем подход `async` / `await`, для отлова ошибок мы можем использовать привычный `try`/`catch`:
 
-[](_media/5/async-await-try-catch.ts ':include :type=code js')
+```typescript
+async function myAsyncAwaitFunction(): Promise<void> {
+  try {
+      let data = await fs.readFile('file.txt');
+      await fs.writeFile('file.txt', '');
+  } catch (err) {
+      // ...
+  }
+}
+```
 
 То же самое касается циклов.
 
 Вариант с коллбэками был абсолютно непригоден для использования наряду с циклами - "зациклить" асинхронные функции старого формата было попросту невозможно, не прибегая к сторонним модулям. Здесь же мы получаем возможность использовать `await something();` внутри цикла и всё будет прекрасно работать.
 
-[](_media/5/async-await-loops.ts ':include :type=code js')
+```typescript
+async function myAsyncAwaitFunction(): Promise<void> {
+  for (let i = 0; i < 10; i++) {
+      let data = await fs.readFile(`file_${i}.txt`);
+      await fs.writeFile(`file_${i}.txt`, '');
+  }
+}
+```
 
 Если хотите сохранить свой спокойный сон, не пытайтесь смотреть на то, что из этого получается на выходе после компиляции (Я предупреждал).
 
