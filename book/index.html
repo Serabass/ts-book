@@ -23,22 +23,20 @@
         coverpage: true,
         name: "Serabass",
         repo: "Serabass/ts-book",
-        search: {
-          noData: {
-            "/en-us/": "No results!",
-            "/": "Ничего не найдено!",
-          },
-          paths: "auto",
-          placeholder: {
-            "/en-us/": "Search",
-            "/": "Поиск (пока не работает)",
-          },
+
+        // complete configuration parameters
+        search: ["/"],
+        copyCode: {
+          buttonText: "Copy to clipboard",
+          errorText: "Error",
+          successText: "Copied",
         },
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.js"></script>
 
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   </body>
 </html>
