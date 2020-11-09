@@ -1,33 +1,80 @@
-[filename](_chapters/0.md ':include')
 
-[filename](_chapters/1.md ':include')
+---
 
-[filename](_chapters/2.md ':include')
+[chapter](_chapters/0_Links.md ':include')
 
-[filename](_chapters/3.md ':include')
+---
 
-[filename](_chapters/4.md ':include')
+[chapter](_chapters/1_Introduction.md ':include')
 
-[filename](_chapters/5.md ':include')
+---
 
-[filename](_chapters/6.md ':include')
+[chapter](_chapters/2_OOP.md ':include')
 
-[filename](_chapters/7.md ':include')
+---
 
-[filename](_chapters/8.md ':include')
+[chapter](_chapters/3_Conditional_Types.md ':include')
 
-[filename](_chapters/9.md ':include')
+---
 
-[filename](_chapters/11.md ':include')
+[chapter](_chapters/4_Debug.md ':include')
 
-[filename](_chapters/12.md ':include')
+---
 
-[filename](_chapters/13.md ':include')
+[chapter](_chapters/5_Promise.md ':include')
 
-[filename](_chapters/15.md ':include')
+---
 
-[filename](_chapters/18.md ':include')
+[chapter](_chapters/6_Reflect.md ':include')
 
-[filename](_chapters/19.md ':include')
+---
 
-[filename](_chapters/20.md ':include')
+[chapter](_chapters/7_Decorators.md ':include')
+
+---
+
+[chapter](_chapters/8_Arrow_Functions.md ':include')
+
+---
+
+[chapter](_chapters/9_DTS.md ':include')
+
+---
+
+[chapter](_chapters/10_Observable.md ':include')
+
+---
+
+[chapter](_chapters/11_Symbols.md ':include')
+
+---
+
+[chapter](_chapters/12_Template_Strings.md ':include')
+
+---
+
+[chapter](_chapters/13_Source_Maps.md ':include')
+
+---
+
+[chapter](_chapters/14_Proxy.md ':include')
+
+---
+
+[chapter](_chapters/15_Snippets.md ':include')
+
+---
+
+[chapter](_chapters/16_Destructurization.md ':include')
+
+---
+
+[chapter](_chapters/17_Generators.md ':include')
+
+---
+
+[chapter](_chapters/18_Import_Export.md ':include')
+
+---
+
+[chapter](_chapters/19_tsconfig.md ':include')
