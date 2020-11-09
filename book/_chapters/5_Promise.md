@@ -4,7 +4,7 @@
 
 ---
 
-[include](_media/5/callbackhell-example.ts ':include')
+[](_includes/5/callbackhell-example.ts ':include :type=code')
 
 ---
 

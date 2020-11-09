@@ -12,6 +12,7 @@ http://localhost:3000/
 * Jenkins
 * Gitlab
 * Gitlab CI
+* Travis CI
 * Git
 * VST
 * Unit Testing

@@ -82,3 +82,11 @@
 ---
 
 [chapter](_chapters/20_Module_Types.md ':include')
+
+---
+
+[chapter](_chapters/21_Async_Iterators.md ':include')
+
+---
+
+[chapter](_chapters/22_tsc.md ':include')
