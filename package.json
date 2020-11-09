@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "docsify serve ./book"
+    "start-ts": "docsify serve ./ts",
+    "start-peg": "docsify serve ./peg"
   },
   "dependencies": {
     "docsify-cli": "^4.4.1",
