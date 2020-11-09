@@ -14,4 +14,6 @@ http://localhost:3000/
 * Gitlab CI
 * Git
 * VST
-* VST
+* Unit Testing
+* Angular
+* 
