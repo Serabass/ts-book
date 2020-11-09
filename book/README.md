@@ -78,3 +78,7 @@
 ---
 
 [chapter](_chapters/19_tsconfig.md ':include')
+
+---
+
+[chapter](_chapters/20_Module_Types.md ':include')
