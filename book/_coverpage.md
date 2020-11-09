@@ -2,7 +2,7 @@
 
 ![logo](_media/icon.svg)
 
-# Поговорим о Typescript <small>1.0</small>
+# Поговорим о Typescript
 
 > Книга о Typescript и не только.
 

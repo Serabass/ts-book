@@ -18,12 +18,25 @@
     <div id="app"></div>
     <script>
       window.$docsify = {
+        auto2top: true,
         name: "ts-book",
         coverpage: true,
         name: "Serabass",
         repo: "Serabass/ts-book",
+        search: {
+          noData: {
+            "/en-us/": "No results!",
+            "/": "Ничего не найдено!",
+          },
+          paths: "auto",
+          placeholder: {
+            "/en-us/": "Search",
+            "/": "Поиск (пока не работает)",
+          },
+        },
       };
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   </body>
 </html>
