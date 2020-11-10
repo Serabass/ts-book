@@ -2,10 +2,10 @@
 
 <img src="_media/icon.svg" alt="logo" width="200"/>
 
-# Поговорим о Typescript
+# Поговорим о формате LRX
 ## Serabass
 
-> Книга о Typescript и не только.
+> Формат LRX
 
 - Основы
 - Примеры

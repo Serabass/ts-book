@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start-ts": "docsify serve ./ts",
-    "start-peg": "docsify serve ./peg"
+    "start-lrx": "docsify serve ./lrx"
   },
   "dependencies": {
     "docsify-cli": "^4.4.1",
