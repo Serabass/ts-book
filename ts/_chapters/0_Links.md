@@ -5,3 +5,5 @@
 * [Официальный репозиторий](https://github.com/microsoft/TypeScript/)
 * [Twitter](https://twitter.com/TypeScript)
 * [TypeScript — русскоговорящее сообщество в Telegram](https://t.me/ts_ru)
+
+test
