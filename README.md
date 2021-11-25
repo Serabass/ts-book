@@ -1,3 +1,5 @@
+# DEPRECATED (Moved to https://gitlab.com/Serabass/ts-book)
+
 # TS Book
 
 ```
